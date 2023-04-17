@@ -10,6 +10,7 @@ const port = 3010;
 app.use(cors());
 app.use(express.json());
 app.use("/user", userRouter);
+app.use("/todo", todo);
 
 app.get("/", (req, res) => {
   res.send("Hello, Express!");
